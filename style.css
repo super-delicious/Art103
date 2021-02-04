@@ -69,6 +69,14 @@ body {
 }
 
 /* Home section */
+.idbgimg {
+  width: 100%;
+  height: 900px;
+  background-image: url("images/g4.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
 .home {
   width: 100%;
   height: 35vh;
@@ -364,6 +372,7 @@ body {
   padding: 0;
   background-color: rgb(255, 255, 255);
 }
+
 .myH1 {
   text-align: center;
   font-size: 4rem;
