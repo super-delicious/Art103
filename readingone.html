@@ -4,7 +4,6 @@
 <head>
 	<title>Yixin Cao</title>
 
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,19 +24,19 @@
 				<a href="index.html">Yixin Cao</a>
 			</div>
 			<div id="mainListDiv" class="main_list">
-				<ul class="navlinks">
-					<li><a href="index.html">Home</a></li>
-					<Li><a href="oblique.html">Oblique Strategies</a></li>
-					<Li><a href="readingone.html">Reading #1</a></li>
-
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Art 103</a>
+						<ul class="dropdown-menu navlinks">
+							<li><a href="index.html">Home</a></li>
+							<Li><a href="oblique.html">Oblique Strategies</a></li>
+							<Li><a href="readingone.html">Reading #1</a></li>
+							<Li><a href="modtessella.html">Mod & Tessellation</a></li>
+							<li class="divider"></li>
+							<li><a href="#">--</a></li>
+						</ul>
+					</li>
 				</ul>
-			</div>
-			<span class="navTrigger">
-				<i></i>
-				<i></i>
-				<i></i>
-			</span>
-		</div>
 	</nav>
 
 
@@ -76,33 +75,23 @@
 
 			<p class="myP"><strong>Q5 -- What is the difference between designing something that has Complexity (aperiodic) vs being Uniform (periodic)</strong><br>
 				Complexity(aperiodic) that does not repeat its pattern over a period, it has flexibility; being uniform(periodic) that repeats its pattern over a period. Uniform is example of tessellation, it's all static and predictable, and inflexibility.
-			</p><br><hr>
+			</p><br>
+			<hr>
 
 			<p class="myH2">Part 2 -- Four Concepts Applied to 4 Different Diagrams</h2><br>
 			<div class="gallery">
-				<img src="images/diagram-01.jpg" style="width:100%" height="auto"><br><br><hr>
-				<img src="images/diagram-02.jpg" style="width:100%" height="auto"><br><br><hr>
-				<img src="images/diagram-03.jpg" style="width:100%" height="auto"><br><br><hr>
-				<img src="images/diagram-04.jpg" style="width:100%" height="auto"><br><br><hr>
-			</div>
-			<hr>
-
-
-
-
-
-
-
-			<!-- Footer -->
-
-			<div class="footer">
-				<a href="mailto:yc-studio@outlook.com" target="_blank"> <i class="fa fa-envelope" style="font-size:24px;color:rgb(241, 15, 241)"></i></a>&nbsp;
-				<a href="https://instagram.com/yixinsstudio" target="_blank"><i class="fa fa-instagram" style="font-size:24px;color:rgb(241, 15, 241)"></i></a>&nbsp;
-				<p>copyright © 2020 Yixin Cao all rights reserved</p>
+				<img src="images/diagram-01.jpg" style="width:100%" height="auto"><br><br>
+				<hr>
+				<img src="images/diagram-02.jpg" style="width:100%" height="auto"><br><br>
+				<hr>
+				<img src="images/diagram-03.jpg" style="width:100%" height="auto"><br><br>
+				<hr>
+				<img src="images/diagram-04.jpg" style="width:100%" height="auto"><br><br>
+				<hr>
 			</div>
 
-		</div>
-		<br>
+
+
 
 		<script>
 			$(window).scroll(function() {
@@ -113,8 +102,12 @@
 					$('.nav').removeClass('affix');
 				}
 			});
+			$('ul.nav li.dropdown').hover(function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			}, function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			});
 		</script>
-
 	</div>
 	</body>
 
