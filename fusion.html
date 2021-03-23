@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Yixin Cao</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<div class="body">
+
+
+	<nav class="nav">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">Yixin Cao</a>
+			</div>
+			<div id="mainListDiv" class="main_list">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Art 103</a>
+						<ul class="dropdown-menu navlinks">
+							<li><a href="index.html">Home</a></li>
+							<Li><a href="oblique.html">Oblique Strategies</a></li>
+							<Li><a href="readingone.html">Reading #1</a></li>
+							<Li><a href="modtessella.html">Mod & Tessellation</a></li>
+							<Li><a href="fusion.html">Fusion Exercises</a></li>
+							<Li><a href="readingtwo.html">Reading #2</a></li>
+							<li class="divider"></li>
+							<li><a href="#">--</a></li>
+						</ul>
+					</li>
+				</ul>
+	</nav>
+
+
+
+	<section class="home">
+	</section>
+	<div style="height: 1400px">
+		<div class="content">
+			<!-----------------------PART 1--------------------------->
+			<h1 class="myH1">Block</h1><br>
+			<p class="myH2">Part 1</h2>
+			<p class="myP">The following models are an exercise after watching the fusion 360 tutorials is to learn the concepts and methods for making sold model objects. I've never used this program before, so the tutorials videos are helpful. The first
+				model is based on Lesson 5, and I created this model to sketch and revolve. The second model is based on Lesson 7; I call this " avocado knife," I made this model started with a box the used fillet and extruded the side, then cut the hole and
+				repeated the shape. After modeling, I give them different physical materials and appearances that stimulate the physical object.</p>
+			<div class="container">
+				<div class="fusion-row">
+					<a target="_blank" href="images/fusion/p1-lesson5-1.jpg">
+						<img src="images/fusion/p1-lesson5-1.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+				</div>
+				<div class="fusion-row">
+					<a target="_blank" href="images/fusion/p1-lesson5-2.jpg">
+						<img src="images/fusion/p1-lesson5-2.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+				</div>
+
+
+				<!----------------------- --------------------------->
+				<div class="fusion-row">
+					<a target="_blank" href="images/fusion/p1-lesson7-1.jpg">
+						<img src="images/fusion/p1-lesson7-1.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+				</div>
+				<div class="fusion-row">
+					<a target="_blank" href="images/fusion/p1-lesson7-2.jpg">
+						<img src="images/fusion/p1-lesson7-2.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+				</div>
+				<hr>
+			</div>
+
+			<!-----------------------PART 2 --------------------------->
+			<p class="myH2">Part 2</h2>
+			<p class="myP">The second part of the project is to create two separate objects. The first object is freestyle and contains a range of features. I designed a table and decorations. The second object is constrained, and I choose to make a model
+				of an infrared thermometer. I select the constraints are triangular sequences. I included each screenshot with each process's timeline bar to show my workflow.</p>
+			<div class="gallery">
+				<a target="_blank" href="images/fusion/p2-object1-2.JPG">
+					<img src="images/fusion/p2-object1-2.JPG" alt="Object 1" width="100%" height="auto"><br><br>
+					<div class="desc">Object 1 : Frees tyle</div>
+					<a target="_blank" href="images/fusion/p2-object1-1.PNG">
+						<img src="images/fusion/p2-object1-1.PNG" alt="Object 1" width="100%" height="auto"><br><br>
+						<a target="_blank" href="images/fusion/p2-object2-1.JPG">
+							<img src="images/fusion/p2-object2-1.JPG" alt="Object 2" width="100%" height="auto"><br><br>
+							<div class="desc">Object 2 : Constrained</div>
+							<a target="_blank" href="images/fusion/p2-object2-2.JPG">
+								<img src="images/fusion/p2-object2-2.JPG" alt="Object 2" width="100%" height="auto">
+			</div>
+
+
+
+			<!----------------------END--------------------------->
+
+		</div>
+
+
+
+
+
+
+
+
+		<script>
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > 50) {
+					$('.nav').addClass('affix');
+					console.log("OK");
+				} else {
+					$('.nav').removeClass('affix');
+				}
+			});
+			$('ul.nav li.dropdown').hover(function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			}, function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			});
+		</script>
+
+	</div>
+	</body>
+
+</html>

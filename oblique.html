@@ -33,6 +33,8 @@
 							<Li><a href="oblique.html">Oblique Strategies</a></li>
 							<Li><a href="readingone.html">Reading #1</a></li>
 							<Li><a href="modtessella.html">Mod & Tessellation</a></li>
+							<Li><a href="fusion.html">Fusion Exercises</a></li>
+							<Li><a href="readingtwo.html">Reading #2</a></li>
 							<li class="divider"></li>
 							<li><a href="#">--</a></li>
 						</ul>
@@ -147,23 +149,23 @@
 
 
 
-			<script>
-				$(window).scroll(function() {
-					if ($(document).scrollTop() > 50) {
-						$('.nav').addClass('affix');
-						console.log("OK");
-					} else {
-						$('.nav').removeClass('affix');
-					}
-				});
-				$('ul.nav li.dropdown').hover(function() {
-					$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-				}, function() {
-					$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-				});
-			</script>
+				<script>
+					$(window).scroll(function() {
+						if ($(document).scrollTop() > 50) {
+							$('.nav').addClass('affix');
+							console.log("OK");
+						} else {
+							$('.nav').removeClass('affix');
+						}
+					});
+					$('ul.nav li.dropdown').hover(function() {
+						$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+					}, function() {
+						$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+					});
+				</script>
 
-		</div>
-		</body>
+			</div>
+			</body>
 
 </html>
