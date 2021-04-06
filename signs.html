@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Yixin Cao</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+</head>
+<div class="body">
+
+
+	<!-----------------------NAV BAR----------------------------------------------->
+
+	<div class='nav'>
+		<ul>
+			<li><a href="index.html"><strong>Yixin Cao</strong></a></li>
+			<li><a>Project</a>
+				<ul>
+					<Li><a href="oblique.html">Oblique Strategies</a></li>
+					<Li><a href="tessel.html">Mod & Tesselation</a></li>
+					<Li><a href="block.html">Block</a></li>
+					<Li><a href="signs.html">Signs</a></li>
+				</ul>
+			</li>
+			<li><a>Reading</a>
+				<ul>
+					<Li><a href="readingone.html">Reading #1</a></li>
+					<Li><a href="readingtwo.html">Reading #2</a></li>
+				</ul>
+			</li>
+			<li class='lamp'><span></span></li>
+		</ul>
+	</div>
+
+	<!---------------------------------------------------------------------->
+
+
+	<section class="home">
+	</section>
+	<div style="height: 1400px">
+		<div class="content">
+			<!-----------------------PART 1--------------------------->
+			<h1 class="myH1">Signs</h1><br>
+			<p class="myH2">Phase 1</h2>
+			<p class="myP">Choose four photo photos of places I've been visited that would make a design for Site-specific art. Here are four sign concepts mocked up in Photoshop against each location, the following image is a map containing the locations, and a route to get between them. </p>
+			<div class="gallery">
+				<a target="_blank" href="images/sign/map.JPG">
+					<img src="images/sign/map.JPG" alt="Location Map" width="100%" height="auto"><br><br>
+
+					<a target="_blank" href="images/sign/sign-01.jpg">
+						<img src="images/sign/sign-01.jpg" alt="Object 1" width="100%" height="auto"><br><br>
+						<a target="_blank" href="images/sign/sign-02.jpg">
+							<img src="images/sign/sign-02.jpg" alt="Object 2" width="100%" height="auto"><br><br>
+
+							<a target="_blank" href="images/sign/sign-03.jpg">
+								<img src="images/sign/sign-03.jpg" alt="Object 2" width="100%" height="auto"><br><br>
+
+								<a target="_blank" href="images/sign/sign-04.jpg">
+									<img src="images/sign/sign-04.jpg" alt="Object 2" width="100%" height="auto">
+			</div><br>
+
+			<!-----------------------PART 2 --------------------------->
+			<p class="myH2">Phase 2</h2>
+			<p class="myP"></p>
+			<div class="container">
+				<div class="fusion-row">
+					<a target="_blank" href="images/sign/letterY_01.jpg">
+						<img src="images/sign/letterY_01.jpg" alt="Sign Phase 2 Object 1" width="600" height="400">
+					</a>
+				</div>
+				<div class="fusion-row">
+					<a target="_blank" href="images/sign/letterY_02.jpg">
+						<img src="images/sign/letterY_02.jpg" alt="Sign Phase 2 Object 1" width="600" height="400">
+					</a>
+				</div>
+				<div class="fusion-row">
+					<a target="_blank" href="images/sign/letterY_03.JPG">
+						<img src="images/sign/letterY_03.JPG" alt="Sign Phase 2 Object 1" width="600" height="400">
+					</a>
+				</div>
+				<div class="fusion-row">
+					<a target="_blank" href="images/sign/letterY_04.JPG">
+						<img src="images/sign/letterY_04.JPG" alt="Sign Phase 2 Object 1" width="600" height="400">
+					</a>
+				</div>
+				<hr>
+			</div>
+
+
+
+
+
+
+
+
+
+			<!----------------------END--------------------------->
+
+		</div>
+
+
+
+
+
+
+
+
+		<script>
+			$(window).scroll(function() {
+				if ($(document).scrollTop() > 50) {
+					$('.nav').addClass('affix');
+					console.log("OK");
+				} else {
+					$('.nav').removeClass('affix');
+				}
+			});
+			$('ul.nav li.dropdown').hover(function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			}, function() {
+				$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			});
+		</script>
+
+	</div>
+	</body>
+
+</html>
