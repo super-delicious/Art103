@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Yixin Cao</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<div class="body">
+
+
+	<!-----------------------NAV BAR----------------------------------------------->
+
+	<div class='nav'>
+		<ul>
+			<li><a href="index.html"><strong>Yixin Cao</strong></a></li>
+			<li><a>Project</a>
+				<ul>
+					<Li><a href="oblique.html">Oblique Strategies</a></li>
+					<Li><a href="tessel.html">Mod & Tesselation</a></li>
+					<Li><a href="block.html">Block</a></li>
+					<Li><a href="signs.html">Signs</a></li>
+				</ul>
+			</li>
+			<li><a>Reading</a>
+				<ul>
+					<Li><a href="readingone.html">Reading #1</a></li>
+					<Li><a href="readingtwo.html">Reading #2</a></li>
+					<Li><a href="reading3.html">Reading #3</a></li>
+				</ul>
+			</li>
+			<li class='lamp'><span></span></li>
+		</ul>
+	</div>
+
+	<!---------------------------------------------------------------------->
+
+
+
+	<section class="home">
+	</section>
+	<div style="height: 1400px">
+		<div class="content">
+			<!-----------------------Part-1---------------------------->
+			<h1 class="myH1">Reading #3 </h1><br>
+			<p class="myP"><strong>Q1. From the podcast, how has our understanding of what dinoasaurs really look like evolved? Describe the progression of how we portrayed them and how might this effect our understanding of what Archeology is saying about
+					them. <br></strong>
+
+				Based on the podcast, our understanding of dinosaurs has changed in various form, From the view that dinosaurs were lumbering cold-blooded reptiles. Subsequently, the anatomical structure of the dinosaurs was thought to be more like that of
+				the super athletic birds. Then, the visual effects of the film are further reinforced by the impression that dinosaurs are fiercely athletic creatures. In recent years, artist have speculated that dinosaurs had strange skin flaps, and lots of
+				feathers, based on soft tissue clues found in dinosaur fossils. It changed our understanding of what archeology is saying about them, because we have been forced to completely rethink our assumptions about these prehistoric animals based on
+				the evidence that has been found. </p>
+
+			<p class="myP"><strong>Q2. The artist/archcologist John Conway who is doing interpretaions of dinosaurs is obviously taking liberty with what could be the actual truth of how these creatures existed. What other fields of science, creative based
+					disciplines and forms of studies use similer techniques that reminds you of this method or process. Please elaborate with your examples both written as well as images and links.</strong><br><br>
+					This is similar to the process of molecular anthropology, where molecular anthropologist came from by extracting and studying fossil specimens of organisms with ancient DNA. For example, the study found that the welsh and Irish Y chromosomes and close Basques, therefore some people think that once accepted by large parts of Anglo Saxons are the ancestors of the British history will be rewritten, from the border with France and Spain's Basque people were the first Europeans, probably is the original ancestors of the English. Here is the reference link:  <a href="https://pubmed.ncbi.nlm.nih.gov/15640092/" target="_blank">[Molecular anthropology and the origin of modern human] - PubMed (nih.gov).</a> 
+
+
+
+			</p>
+
+
+
+
+			<p class="myP"><strong>Q3. First, summerize in your own words the characteristics of 'Material Speculation' as described in the second article. Then given this article's examples for possible future products, how can this same technique also be
+					used to create objects that refer to the past?</strong><br><br>
+				In my opinion, material speculation is to speculate about the possible world or to describe the possible world based on the concept of literary theory, and to criticize and investigate our world through specific fictional artifacts designs.
+				This conjectured possibility may not be recognized and exist in our real world, which will subvert our worldview and cognition, and change our logic.
+			</p>
+
+
+
+
+
+
+
+
+			<script>
+				$(window).scroll(function() {
+					if ($(document).scrollTop() > 50) {
+						$('.nav').addClass('affix');
+						console.log("OK");
+					} else {
+						$('.nav').removeClass('affix');
+					}
+				});
+				$('ul.nav li.dropdown').hover(function() {
+					$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+				}, function() {
+					$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+				});
+			</script>
+		</div>
+		</body>
+
+</html>
