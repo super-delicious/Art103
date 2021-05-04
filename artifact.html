@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Yixin Cao</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+
+</head>
+<div class="body">
+
+
+	<!-----------------------NAV BAR----------------------------------------------->
+
+	<div class='nav'>
+		<ul>
+			<li><a href="index.html"><strong>Yixin Cao</strong></a></li>
+			<li><a>Project</a>
+				<ul>
+					<Li><a href="oblique.html">Oblique Strategies</a></li>
+					<Li><a href="tessel.html">Mod & Tesselation</a></li>
+					<Li><a href="block.html">Block</a></li>
+					<Li><a href="signs.html">Signs</a></li>
+					<Li><a href="artifact.html">Artifact</a></li>
+				</ul>
+			</li>
+			<li><a>Reading</a>
+				<ul>
+					<Li><a href="readingone.html">Reading #1</a></li>
+					<Li><a href="readingtwo.html">Reading #2</a></li>
+					<Li><a href="reading3.html">Reading #3</a></li>
+				</ul>
+			</li>
+			<li class='lamp'><span></span></li>
+		</ul>
+	</div>
+
+	<!---------------------------------------------------------------------->
+
+
+
+
+	<section class="home">
+	</section>
+	<div style="height: 1400px">
+		<div class="content">
+
+			<p class="myH1">ARTIFACT</h1>
+				<!-----------------------Phase 1--------------------------->
+			<p class="myH3">Phase 1 - Find and Print a Thingiverse Artifact</h3>
+			<div class="container">
+				<div class="row">
+					<a target="_blank" href="images/artifact/lonic1.jpg">
+						<img src="images/artifact/lonic1.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+					<div class="desc"></div>
+				</div>
+				<div class="row">
+					<a target="_blank" href="images/artifact/lonic2.jpg">
+						<img src="images/artifact/lonic2.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+					<div class="desc"></div>
+				</div>
+				<div class="row">
+					<a target="_blank" href="images/artifact/lonic3.jpg">
+						<img src="images/artifact/lonic3.jpg" alt="Tessellation" width="600" height="400">
+					</a>
+					<div class="desc"></div>
+				</div>
+				<div class="row">
+					<a target="_blank" href="images/artifact/cura1.JPG">
+						<img src="images/artifact/cura1.JPG" alt="Tessellation" width="600" height="400">
+					</a>
+					<div class="desc"></div>
+				</div>
+				<div class="row">
+					<a target="_blank" href="images/artifact/thing.JPG">
+						<img src="images/artifact/thing.JPG" alt="Tessellation" width="600" height="400">
+					</a>
+					<div class="desc"></div>
+				</div>
+			</div>
+			<p class="myP">I discovered the model on Thingiverse, which is two I Ching dices. The I Ching is an ancient Chinese method of divination. Black dice represent an internal hexagram on the bottom, whereas white dice represent an external hexagram on the top.
+			</p>
+			<a href="https://www.thingiverse.com/thing:1087647" class="button" target="_blank">VIEW Original Thingiverse File</a>
+			<hr>
+		</div>
+	</div>
+</div>
+<!-----------------------PHASE 2--------------------------->
+
+<!----------------------- END --------------------------->
+
+
+
+
+
+
+<script>
+	$(window).scroll(function() {
+		if ($(document).scrollTop() > 50) {
+			$('.nav').addClass('affix');
+			console.log("OK");
+		} else {
+			$('.nav').removeClass('affix');
+		}
+	});
+	$('ul.nav li.dropdown').hover(function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+		$(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+</script>
+
+</div>
+</body>
+
+</html>
